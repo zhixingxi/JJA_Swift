@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E42424151ECA8FA50055A715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42424131ECA8FA50055A715 /* Main.storyboard */; };
 		E42424171ECA8FA50055A715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42424161ECA8FA50055A715 /* Assets.xcassets */; };
-		E424241A1ECA8FA50055A715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42424181ECA8FA50055A715 /* LaunchScreen.storyboard */; };
 		E42424251ECA8FA50055A715 /* JJA_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42424241ECA8FA50055A715 /* JJA_SwiftTests.swift */; };
 		E42424301ECA8FA50055A715 /* JJA_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424242F1ECA8FA50055A715 /* JJA_SwiftUITests.swift */; };
 		E4CD7C951EE2C78800077BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CD7C941EE2C78800077BDD /* AppDelegate.swift */; };
 		E4D654D51EE847A40087874E /* AppDelegate+QLCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */; };
 		E4D654D81EE84BFE0087874E /* AppCommonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */; };
 		E4D654DA1EE8514E0087874E /* QLGlobalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D91EE8514E0087874E /* QLGlobalUtils.swift */; };
+		E4D654DD1EE855810087874E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4D654DC1EE855810087874E /* Info.plist */; };
 		F70491CFD57BF8E597A25293 /* Pods_JJA_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3CF805D806EDA066C9EEF6 /* Pods_JJA_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +40,7 @@
 		26B75E4B7E55631DC185A3C8 /* Pods-JJA_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJA_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJA_Swift/Pods-JJA_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		843C41E9AC0AB4677C76BC33 /* Pods-JJA_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJA_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJA_Swift/Pods-JJA_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E424240C1ECA8FA50055A715 /* JJA_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJA_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E42424141ECA8FA50055A715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E42424161ECA8FA50055A715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E42424191ECA8FA50055A715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E424241B1ECA8FA50055A715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E42424161ECA8FA50055A715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		E42424201ECA8FA50055A715 /* JJA_SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJA_SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42424241ECA8FA50055A715 /* JJA_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJA_SwiftTests.swift; sourceTree = "<group>"; };
 		E42424261ECA8FA50055A715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +51,7 @@
 		E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+QLCommon.swift"; sourceTree = "<group>"; };
 		E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommonInfo.swift; sourceTree = "<group>"; };
 		E4D654D91EE8514E0087874E /* QLGlobalUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLGlobalUtils.swift; sourceTree = "<group>"; };
+		E4D654DC1EE855810087874E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +121,7 @@
 				E4CD7C931EE2C75D00077BDD /* Utils */,
 				E4BF16C51EE7AD4200204847 /* Const */,
 				E4CD7C921EE2C75D00077BDD /* ThirdParty */,
-				E42424131ECA8FA50055A715 /* Main.storyboard */,
-				E42424161ECA8FA50055A715 /* Assets.xcassets */,
-				E42424181ECA8FA50055A715 /* LaunchScreen.storyboard */,
-				E424241B1ECA8FA50055A715 /* Info.plist */,
+				E4D654DB1EE855810087874E /* Resource */,
 			);
 			path = JJA_Swift;
 			sourceTree = "<group>";
@@ -209,6 +203,15 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4D654DB1EE855810087874E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E42424161ECA8FA50055A715 /* Assets.xcassets */,
+				E4D654DC1EE855810087874E /* Info.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		E62C0DFF2CEBAACACD093B5C /* Frameworks */ = {
@@ -332,9 +335,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E424241A1ECA8FA50055A715 /* LaunchScreen.storyboard in Resources */,
+				E4D654DD1EE855810087874E /* Info.plist in Resources */,
 				E42424171ECA8FA50055A715 /* Assets.xcassets in Resources */,
-				E42424151ECA8FA50055A715 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,25 +446,6 @@
 			targetProxy = E424242C1ECA8FA50055A715 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E42424131ECA8FA50055A715 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E42424141ECA8FA50055A715 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E42424181ECA8FA50055A715 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E42424191ECA8FA50055A715 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E42424321ECA8FA50055A715 /* Debug */ = {
