@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E42424121ECA8FA50055A715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42424111ECA8FA50055A715 /* ViewController.swift */; };
 		E42424151ECA8FA50055A715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42424131ECA8FA50055A715 /* Main.storyboard */; };
 		E42424171ECA8FA50055A715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42424161ECA8FA50055A715 /* Assets.xcassets */; };
 		E424241A1ECA8FA50055A715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42424181ECA8FA50055A715 /* LaunchScreen.storyboard */; };
 		E42424251ECA8FA50055A715 /* JJA_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42424241ECA8FA50055A715 /* JJA_SwiftTests.swift */; };
 		E42424301ECA8FA50055A715 /* JJA_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424242F1ECA8FA50055A715 /* JJA_SwiftUITests.swift */; };
 		E4CD7C951EE2C78800077BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CD7C941EE2C78800077BDD /* AppDelegate.swift */; };
+		E4D654D51EE847A40087874E /* AppDelegate+QLCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */; };
+		E4D654D81EE84BFE0087874E /* AppCommonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */; };
+		E4D654DA1EE8514E0087874E /* QLGlobalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D91EE8514E0087874E /* QLGlobalUtils.swift */; };
 		F70491CFD57BF8E597A25293 /* Pods_JJA_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3CF805D806EDA066C9EEF6 /* Pods_JJA_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +41,6 @@
 		26B75E4B7E55631DC185A3C8 /* Pods-JJA_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJA_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJA_Swift/Pods-JJA_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		843C41E9AC0AB4677C76BC33 /* Pods-JJA_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJA_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJA_Swift/Pods-JJA_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E424240C1ECA8FA50055A715 /* JJA_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJA_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E42424111ECA8FA50055A715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E42424141ECA8FA50055A715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E42424161ECA8FA50055A715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E42424191ECA8FA50055A715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		E424242F1ECA8FA50055A715 /* JJA_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJA_SwiftUITests.swift; sourceTree = "<group>"; };
 		E42424311ECA8FA50055A715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4CD7C941EE2C78800077BDD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+QLCommon.swift"; sourceTree = "<group>"; };
+		E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommonInfo.swift; sourceTree = "<group>"; };
+		E4D654D91EE8514E0087874E /* QLGlobalUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLGlobalUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +124,6 @@
 				E4CD7C931EE2C75D00077BDD /* Utils */,
 				E4BF16C51EE7AD4200204847 /* Const */,
 				E4CD7C921EE2C75D00077BDD /* ThirdParty */,
-				E42424111ECA8FA50055A715 /* ViewController.swift */,
 				E42424131ECA8FA50055A715 /* Main.storyboard */,
 				E42424161ECA8FA50055A715 /* Assets.xcassets */,
 				E42424181ECA8FA50055A715 /* LaunchScreen.storyboard */,
@@ -158,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				E4CD7C941EE2C78800077BDD /* AppDelegate.swift */,
+				E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */,
+				E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -193,8 +198,17 @@
 		E4CD7C931EE2C75D00077BDD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E4D654D61EE84B770087874E /* Extensions */,
+				E4D654D91EE8514E0087874E /* QLGlobalUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E4D654D61EE84B770087874E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E62C0DFF2CEBAACACD093B5C /* Frameworks */ = {
@@ -393,8 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D654D51EE847A40087874E /* AppDelegate+QLCommon.swift in Sources */,
+				E4D654DA1EE8514E0087874E /* QLGlobalUtils.swift in Sources */,
 				E4CD7C951EE2C78800077BDD /* AppDelegate.swift in Sources */,
-				E42424121ECA8FA50055A715 /* ViewController.swift in Sources */,
+				E4D654D81EE84BFE0087874E /* AppCommonInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
