@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Kingfisher (3.9.1)
+  - MBProgressHUD (1.0.0)
+  - RxCocoa (3.4.1):
+    - RxSwift (~> 3.4)
+  - RxSwift (3.4.1)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
+  - TimedSilver (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Kingfisher (~> 3.9.1)
+  - MBProgressHUD (~> 1.0.0)
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+  - SnapKit (~> 3.2.0)
+  - SwiftyJSON
+  - TimedSilver
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Kingfisher: 6729a0baaa458245bfb8cd5a1296c71c10d6eb6c
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
+  RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TimedSilver: 13f312d4d11895ab5660c20b0c8fb73aba171e90
+
+PODFILE CHECKSUM: 5b75f010287e7bda7765a0760cb04fd975fdf932
+
+COCOAPODS: 1.2.0.rc.1
