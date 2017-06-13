@@ -47,14 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = UIViewController()
+        window?.rootViewController = MainTabBarController()
         setupAdditions()
-        DebugLog(message: AppCommonInfo.appName)
-        DebugLog(message: AppCommonInfo.bundleName)
-        DebugLog(message: AppCommonInfo.appVersion)
-        DebugLog(message: AppCommonInfo.appBuildVersion)
-        DebugLog(message: AppCommonInfo.bundleIdentifier)
-        DebugLog(message: AppCommonInfo.appVersionAndBuild)
         window?.makeKeyAndVisible()
         return true
     }
