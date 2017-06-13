@@ -56,6 +56,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DebugLog(message: AppCommonInfo.bundleIdentifier)
         DebugLog(message: AppCommonInfo.appVersionAndBuild)
         window?.makeKeyAndVisible()
+        let userR = UserRequest(name: "onevcat")
+        LocalFileClient().send(userR) { (user) in
+            guard let user = user else { return }
+            DebugLog(message: "\(String(describing: user.message)) from \(String(describing: user.name))")
+        }
         
         return true
     }

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// App的一些常用信息
 public struct AppCommonInfo {
     /// app名称
     public static var appName: String {
