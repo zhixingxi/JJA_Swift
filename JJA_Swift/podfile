@@ -14,7 +14,9 @@ target 'JJA_Swift' do
     pod 'RxSwift',    '~> 3.0'
     pod 'RxCocoa',    '~> 3.0'
     pod 'TimedSilver'
-
+    pod 'Moya'
+    #json转model
+    pod 'HandyJSON', '~> 1.7.1'
     #Objective-C
     pod 'MBProgressHUD', '~> 1.0.0'
 
