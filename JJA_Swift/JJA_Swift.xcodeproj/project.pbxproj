@@ -10,6 +10,10 @@
 		E42424171ECA8FA50055A715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42424161ECA8FA50055A715 /* Assets.xcassets */; };
 		E42424251ECA8FA50055A715 /* JJA_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42424241ECA8FA50055A715 /* JJA_SwiftTests.swift */; };
 		E42424301ECA8FA50055A715 /* JJA_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424242F1ECA8FA50055A715 /* JJA_SwiftUITests.swift */; };
+		E42490F61EF1196300343E62 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42490F51EF1196300343E62 /* HTTPService.swift */; };
+		E42490F81EF1201500343E62 /* QLHTTPTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42490F71EF1201500343E62 /* QLHTTPTools.swift */; };
+		E42490FA1EF13C6000343E62 /* JJAConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42490F91EF13C6000343E62 /* JJAConfigModel.swift */; };
+		E42490FC1EF13E5E00343E62 /* JsonModelProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42490FB1EF13E5E00343E62 /* JsonModelProtocal.swift */; };
 		E45D34B71EEF786A0083C93D /* meng.json in Resources */ = {isa = PBXBuildFile; fileRef = E45D34B61EEF786A0083C93D /* meng.json */; };
 		E45D34C21EEF94890083C93D /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E45D34C11EEF94890083C93D /* main.json */; };
 		E45D34C51EEF95860083C93D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34C41EEF95860083C93D /* MainTabBarController.swift */; };
@@ -55,6 +59,10 @@
 		E424242B1ECA8FA50055A715 /* JJA_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJA_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E424242F1ECA8FA50055A715 /* JJA_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJA_SwiftUITests.swift; sourceTree = "<group>"; };
 		E42424311ECA8FA50055A715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E42490F51EF1196300343E62 /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		E42490F71EF1201500343E62 /* QLHTTPTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLHTTPTools.swift; sourceTree = "<group>"; };
+		E42490F91EF13C6000343E62 /* JJAConfigModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJAConfigModel.swift; sourceTree = "<group>"; };
+		E42490FB1EF13E5E00343E62 /* JsonModelProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModelProtocal.swift; sourceTree = "<group>"; };
 		E45D34B61EEF786A0083C93D /* meng.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meng.json; sourceTree = "<group>"; };
 		E45D34C11EEF94890083C93D /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		E45D34C41EEF95860083C93D /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -160,6 +168,16 @@
 			path = JJA_SwiftUITests;
 			sourceTree = "<group>";
 		};
+		E42490F41EF118FE00343E62 /* HTTPManager */ = {
+			isa = PBXGroup;
+			children = (
+				E42490F51EF1196300343E62 /* HTTPService.swift */,
+				E42490F71EF1201500343E62 /* QLHTTPTools.swift */,
+				E42490FB1EF13E5E00343E62 /* JsonModelProtocal.swift */,
+			);
+			path = HTTPManager;
+			sourceTree = "<group>";
+		};
 		E45D34C31EEF94AD0083C93D /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +251,8 @@
 		E4CD7C901EE2C75D00077BDD /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				E42490F41EF118FE00343E62 /* HTTPManager */,
+				E42490F91EF13C6000343E62 /* JJAConfigModel.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -485,6 +505,10 @@
 				E4D654DA1EE8514E0087874E /* QLGlobalUtils.swift in Sources */,
 				E45D34C51EEF95860083C93D /* MainTabBarController.swift in Sources */,
 				E4CD7C951EE2C78800077BDD /* AppDelegate.swift in Sources */,
+				E42490FC1EF13E5E00343E62 /* JsonModelProtocal.swift in Sources */,
+				E42490FA1EF13C6000343E62 /* JJAConfigModel.swift in Sources */,
+				E42490F61EF1196300343E62 /* HTTPService.swift in Sources */,
+				E42490F81EF1201500343E62 /* QLHTTPTools.swift in Sources */,
 				E4D654D81EE84BFE0087874E /* AppCommonInfo.swift in Sources */,
 				E45D34CB1EEF96420083C93D /* HomeViewController.swift in Sources */,
 				E45D34D31EEF98D80083C93D /* NavigationController.swift in Sources */,

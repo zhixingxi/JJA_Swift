@@ -37,6 +37,7 @@
 //                  不见满街漂亮妹，哪个归得程序员？
 
 import UIKit
+import HandyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -50,6 +51,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = MainTabBarController()
         setupAdditions()
         window?.makeKeyAndVisible()
+        
+        
+        QLHTTPTools.shareInstance.jja_request(target: .ConfigInfo, successHandle: { (response) in
+            DebugLog(message: response)
+            guard let model = JJAConfigModel.deserialize(from: (response as! NSDictionary), designatedPath: "d") else { return }
+            DebugLog(message: model.android_last_version)
+        }) { (error) in
+            
+        }
         return true
     }
 
