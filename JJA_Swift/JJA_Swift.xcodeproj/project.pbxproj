@@ -15,14 +15,19 @@
 		E42490FC1EF13E5E00343E62 /* JsonModelProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42490FB1EF13E5E00343E62 /* JsonModelProtocal.swift */; };
 		E45D34B71EEF786A0083C93D /* meng.json in Resources */ = {isa = PBXBuildFile; fileRef = E45D34B61EEF786A0083C93D /* meng.json */; };
 		E45D34C21EEF94890083C93D /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E45D34C11EEF94890083C93D /* main.json */; };
-		E45D34C51EEF95860083C93D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34C41EEF95860083C93D /* MainTabBarController.swift */; };
 		E45D34CB1EEF96420083C93D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34CA1EEF96420083C93D /* HomeViewController.swift */; };
 		E45D34CD1EEF96630083C93D /* ManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34CC1EEF96630083C93D /* ManagerViewController.swift */; };
 		E45D34CF1EEF96B60083C93D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34CE1EEF96B60083C93D /* ProfileViewController.swift */; };
 		E45D34D11EEF96C50083C93D /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34D01EEF96C50083C93D /* MessageViewController.swift */; };
-		E45D34D31EEF98D80083C93D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34D21EEF98D80083C93D /* NavigationController.swift */; };
 		E49D76121F3A06C800846985 /* JJAConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76111F3A06C800846985 /* JJAConfigModel.swift */; };
 		E49D76141F3A0AF500846985 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76131F3A0AF500846985 /* AccountModel.swift */; };
+		E49D76181F3A0C2900846985 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76161F3A0C2900846985 /* MainTabBarController.swift */; };
+		E49D76191F3A0C2900846985 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76171F3A0C2900846985 /* NavigationController.swift */; };
+		E49D761C1F3A0C8E00846985 /* JJANewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D761B1F3A0C8E00846985 /* JJANewFeatureView.swift */; };
+		E49D761F1F3A0E2900846985 /* UIScreen+QLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D761E1F3A0E2900846985 /* UIScreen+QLExtension.swift */; };
+		E49D76211F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76201F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift */; };
+		E49D76231F3A15C600846985 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76221F3A15C600846985 /* BaseViewController.swift */; };
+		E49D76251F3A17FB00846985 /* JJALoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76241F3A17FB00846985 /* JJALoginController.swift */; };
 		E4CD7C951EE2C78800077BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CD7C941EE2C78800077BDD /* AppDelegate.swift */; };
 		E4D654D51EE847A40087874E /* AppDelegate+QLCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */; };
 		E4D654D81EE84BFE0087874E /* AppCommonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */; };
@@ -65,14 +70,19 @@
 		E42490FB1EF13E5E00343E62 /* JsonModelProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModelProtocal.swift; sourceTree = "<group>"; };
 		E45D34B61EEF786A0083C93D /* meng.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meng.json; sourceTree = "<group>"; };
 		E45D34C11EEF94890083C93D /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
-		E45D34C41EEF95860083C93D /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E45D34CA1EEF96420083C93D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E45D34CC1EEF96630083C93D /* ManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerViewController.swift; sourceTree = "<group>"; };
 		E45D34CE1EEF96B60083C93D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E45D34D01EEF96C50083C93D /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		E45D34D21EEF98D80083C93D /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		E49D76111F3A06C800846985 /* JJAConfigModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJAConfigModel.swift; sourceTree = "<group>"; };
 		E49D76131F3A0AF500846985 /* AccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		E49D76161F3A0C2900846985 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E49D76171F3A0C2900846985 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		E49D761B1F3A0C8E00846985 /* JJANewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJANewFeatureView.swift; sourceTree = "<group>"; };
+		E49D761E1F3A0E2900846985 /* UIScreen+QLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+QLExtension.swift"; sourceTree = "<group>"; };
+		E49D76201F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+QLExtension.swift"; sourceTree = "<group>"; };
+		E49D76221F3A15C600846985 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E49D76241F3A17FB00846985 /* JJALoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJALoginController.swift; sourceTree = "<group>"; };
 		E4CD7C941EE2C78800077BDD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+QLCommon.swift"; sourceTree = "<group>"; };
 		E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommonInfo.swift; sourceTree = "<group>"; };
@@ -183,8 +193,9 @@
 		E45D34C31EEF94AD0083C93D /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
-				E45D34C41EEF95860083C93D /* MainTabBarController.swift */,
-				E45D34D21EEF98D80083C93D /* NavigationController.swift */,
+				E49D761D1F3A0CB200846985 /* Login(登录注册) */,
+				E49D761A1F3A0C4800846985 /* NewFeatures(新特性页) */,
+				E49D76151F3A0C2900846985 /* Controller */,
 			);
 			name = "Main(主要)";
 			path = Main;
@@ -235,6 +246,33 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E49D76151F3A0C2900846985 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E49D76161F3A0C2900846985 /* MainTabBarController.swift */,
+				E49D76171F3A0C2900846985 /* NavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E49D761A1F3A0C4800846985 /* NewFeatures(新特性页) */ = {
+			isa = PBXGroup;
+			children = (
+				E49D761B1F3A0C8E00846985 /* JJANewFeatureView.swift */,
+			);
+			name = "NewFeatures(新特性页)";
+			path = NewFeatures;
+			sourceTree = "<group>";
+		};
+		E49D761D1F3A0CB200846985 /* Login(登录注册) */ = {
+			isa = PBXGroup;
+			children = (
+				E49D76241F3A17FB00846985 /* JJALoginController.swift */,
+			);
+			name = "Login(登录注册)";
+			path = Login;
+			sourceTree = "<group>";
+		};
 		E4BF16C51EE7AD4200204847 /* Const */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +293,7 @@
 		E4CD7C8F1EE2C75D00077BDD /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				E49D76221F3A15C600846985 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -299,6 +338,8 @@
 		E4D654D61EE84B770087874E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E49D761E1F3A0E2900846985 /* UIScreen+QLExtension.swift */,
+				E49D76201F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -514,18 +555,23 @@
 				E4D654D51EE847A40087874E /* AppDelegate+QLCommon.swift in Sources */,
 				E45D34D11EEF96C50083C93D /* MessageViewController.swift in Sources */,
 				E4D654DA1EE8514E0087874E /* QLGlobalUtils.swift in Sources */,
-				E45D34C51EEF95860083C93D /* MainTabBarController.swift in Sources */,
 				E4CD7C951EE2C78800077BDD /* AppDelegate.swift in Sources */,
+				E49D76231F3A15C600846985 /* BaseViewController.swift in Sources */,
+				E49D76191F3A0C2900846985 /* NavigationController.swift in Sources */,
+				E49D761F1F3A0E2900846985 /* UIScreen+QLExtension.swift in Sources */,
 				E42490FC1EF13E5E00343E62 /* JsonModelProtocal.swift in Sources */,
 				E42490F61EF1196300343E62 /* HTTPService.swift in Sources */,
+				E49D76251F3A17FB00846985 /* JJALoginController.swift in Sources */,
 				E42490F81EF1201500343E62 /* QLHTTPTools.swift in Sources */,
+				E49D761C1F3A0C8E00846985 /* JJANewFeatureView.swift in Sources */,
 				E4D654D81EE84BFE0087874E /* AppCommonInfo.swift in Sources */,
 				E45D34CB1EEF96420083C93D /* HomeViewController.swift in Sources */,
+				E49D76181F3A0C2900846985 /* MainTabBarController.swift in Sources */,
 				E49D76141F3A0AF500846985 /* AccountModel.swift in Sources */,
-				E45D34D31EEF98D80083C93D /* NavigationController.swift in Sources */,
 				E49D76121F3A06C800846985 /* JJAConfigModel.swift in Sources */,
 				E45D34CF1EEF96B60083C93D /* ProfileViewController.swift in Sources */,
 				E45D34CD1EEF96630083C93D /* ManagerViewController.swift in Sources */,
+				E49D76211F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
