@@ -25,6 +25,10 @@ class QLHTTPTools {
     
     static let shareInstance: QLHTTPTools = QLHTTPTools()
     
+    //App配置信息的model
+    var configModel: JJAConfigModel?
+    
+    
     // 请求头
     class var httpHeaderField: [String: String]? {
         return ["ut": "token"]
@@ -54,7 +58,7 @@ class QLHTTPTools {
     //日志插件
     private static let logPlug = NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)
     
-    fileprivate let provider = MoyaProvider<HTTPService>(endpointClosure:myEndpointClosure, requestClosure:requestClosure, stubClosure: MoyaProvider.delayedStub(30), plugins: [QLHTTPTools.logPlug])
+    fileprivate let provider = MoyaProvider<HTTPService>(endpointClosure:myEndpointClosure, requestClosure:requestClosure, stubClosure: MoyaProvider.neverStub, plugins: [QLHTTPTools.logPlug])
 }
 
 extension QLHTTPTools {

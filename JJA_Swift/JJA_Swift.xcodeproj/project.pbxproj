@@ -12,7 +12,6 @@
 		E42424301ECA8FA50055A715 /* JJA_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424242F1ECA8FA50055A715 /* JJA_SwiftUITests.swift */; };
 		E42490F61EF1196300343E62 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42490F51EF1196300343E62 /* HTTPService.swift */; };
 		E42490F81EF1201500343E62 /* QLHTTPTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42490F71EF1201500343E62 /* QLHTTPTools.swift */; };
-		E42490FA1EF13C6000343E62 /* JJAConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42490F91EF13C6000343E62 /* JJAConfigModel.swift */; };
 		E42490FC1EF13E5E00343E62 /* JsonModelProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42490FB1EF13E5E00343E62 /* JsonModelProtocal.swift */; };
 		E45D34B71EEF786A0083C93D /* meng.json in Resources */ = {isa = PBXBuildFile; fileRef = E45D34B61EEF786A0083C93D /* meng.json */; };
 		E45D34C21EEF94890083C93D /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = E45D34C11EEF94890083C93D /* main.json */; };
@@ -22,6 +21,8 @@
 		E45D34CF1EEF96B60083C93D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34CE1EEF96B60083C93D /* ProfileViewController.swift */; };
 		E45D34D11EEF96C50083C93D /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34D01EEF96C50083C93D /* MessageViewController.swift */; };
 		E45D34D31EEF98D80083C93D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D34D21EEF98D80083C93D /* NavigationController.swift */; };
+		E49D76121F3A06C800846985 /* JJAConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76111F3A06C800846985 /* JJAConfigModel.swift */; };
+		E49D76141F3A0AF500846985 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76131F3A0AF500846985 /* AccountModel.swift */; };
 		E4CD7C951EE2C78800077BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CD7C941EE2C78800077BDD /* AppDelegate.swift */; };
 		E4D654D51EE847A40087874E /* AppDelegate+QLCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */; };
 		E4D654D81EE84BFE0087874E /* AppCommonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */; };
@@ -61,7 +62,6 @@
 		E42424311ECA8FA50055A715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E42490F51EF1196300343E62 /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		E42490F71EF1201500343E62 /* QLHTTPTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLHTTPTools.swift; sourceTree = "<group>"; };
-		E42490F91EF13C6000343E62 /* JJAConfigModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJAConfigModel.swift; sourceTree = "<group>"; };
 		E42490FB1EF13E5E00343E62 /* JsonModelProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModelProtocal.swift; sourceTree = "<group>"; };
 		E45D34B61EEF786A0083C93D /* meng.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meng.json; sourceTree = "<group>"; };
 		E45D34C11EEF94890083C93D /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
@@ -71,6 +71,8 @@
 		E45D34CE1EEF96B60083C93D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E45D34D01EEF96C50083C93D /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		E45D34D21EEF98D80083C93D /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		E49D76111F3A06C800846985 /* JJAConfigModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJAConfigModel.swift; sourceTree = "<group>"; };
+		E49D76131F3A0AF500846985 /* AccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		E4CD7C941EE2C78800077BDD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+QLCommon.swift"; sourceTree = "<group>"; };
 		E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommonInfo.swift; sourceTree = "<group>"; };
@@ -224,6 +226,15 @@
 			path = Message;
 			sourceTree = "<group>";
 		};
+		E49D76101F3A06C800846985 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E49D76111F3A06C800846985 /* JJAConfigModel.swift */,
+				E49D76131F3A0AF500846985 /* AccountModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E4BF16C51EE7AD4200204847 /* Const */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,8 +262,8 @@
 		E4CD7C901EE2C75D00077BDD /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				E49D76101F3A06C800846985 /* Model */,
 				E42490F41EF118FE00343E62 /* HTTPManager */,
-				E42490F91EF13C6000343E62 /* JJAConfigModel.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -506,12 +517,13 @@
 				E45D34C51EEF95860083C93D /* MainTabBarController.swift in Sources */,
 				E4CD7C951EE2C78800077BDD /* AppDelegate.swift in Sources */,
 				E42490FC1EF13E5E00343E62 /* JsonModelProtocal.swift in Sources */,
-				E42490FA1EF13C6000343E62 /* JJAConfigModel.swift in Sources */,
 				E42490F61EF1196300343E62 /* HTTPService.swift in Sources */,
 				E42490F81EF1201500343E62 /* QLHTTPTools.swift in Sources */,
 				E4D654D81EE84BFE0087874E /* AppCommonInfo.swift in Sources */,
 				E45D34CB1EEF96420083C93D /* HomeViewController.swift in Sources */,
+				E49D76141F3A0AF500846985 /* AccountModel.swift in Sources */,
 				E45D34D31EEF98D80083C93D /* NavigationController.swift in Sources */,
+				E49D76121F3A06C800846985 /* JJAConfigModel.swift in Sources */,
 				E45D34CF1EEF96B60083C93D /* ProfileViewController.swift in Sources */,
 				E45D34CD1EEF96630083C93D /* ManagerViewController.swift in Sources */,
 			);

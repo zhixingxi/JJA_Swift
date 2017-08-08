@@ -25,6 +25,15 @@ extension AppDelegate {
         }
     }
     
+    //加载app配置信息
+    func loadAppConfigerInformation() {
+        QLHTTPTools.shareInstance.jja_request(target: .ConfigInfo, successHandle: { (responsObj) in
+            QLHTTPTools.shareInstance.configModel = JJAConfigModel.jja_prase(jsonData: responsObj)
+        }) { (error) in
+            
+        }
+        
+    }
     
     /// 从服务器加载一些应用程序信息
     func loadAppInformation() {
