@@ -4,7 +4,8 @@
 //
 //  Created by MQL-IT on 2017/6/14.
 //  Copyright © 2017年 MQL-IT. All rights reserved.
-//  发起网络请求的地方
+//  发起网络请求的地方,相当于对网络请求第三方库的再一次封装,方便以后进行第三方库的替换
+
 
 import Foundation
 import Moya
@@ -25,13 +26,13 @@ class QLHTTPTools {
     static let shareInstance: QLHTTPTools = QLHTTPTools()
     
     // 请求头
-    static var httpHeaderField: [String: String]? {
+    class var httpHeaderField: [String: String]? {
         return ["ut": "token"]
     }
     
     //公共参数
     private static var commonParams: [String: Any]? {
-        return ["version":"1.0","plat":"2","type":"1"]
+        return ["version":AppCommonInfo.appVersion,"plat":"2","type":"1"]
     }
 
     /// 自定义endPoint
@@ -49,14 +50,17 @@ class QLHTTPTools {
         request.timeoutInterval = 30    //设置请求超时时间
         done(.success(request))
     }
+    
     //日志插件
     private static let logPlug = NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)
     
-     fileprivate let provider = MoyaProvider<HTTPService>(endpointClosure:myEndpointClosure, requestClosure:requestClosure, plugins: [QLHTTPTools.logPlug])
+    fileprivate let provider = MoyaProvider<HTTPService>(endpointClosure:myEndpointClosure, requestClosure:requestClosure, stubClosure: MoyaProvider.delayedStub(30), plugins: [QLHTTPTools.logPlug])
 }
 
 extension QLHTTPTools {
-    func jja_request(target: HTTPService, successHandle:((Any) -> Void)?, errorHandle:((Swift.Error) -> Void)?) {
+    func jja_request(target: HTTPService, successHandle:((JSON) -> Void)?, errorHandle:((Swift.Error) -> Void)?) {
+        
+        
         provider.request(target) { (result) in
             switch result {
             case let .success(response):
@@ -65,17 +69,8 @@ extension QLHTTPTools {
                 if responseJson["c"].int == 1 {
                     let dJosn = responseJson["d"]
                     if let handler = successHandle {
-                        switch dJosn.type {
-                        case .dictionary:
-                            handler(dJosn.dictionaryObject ?? [:])
-                        case .array:
-                            handler(dJosn.arrayObject ?? [])
-                        default:
-                            break
-                        }
+                        handler(dJosn)
                     }
-                    
-                    
                 } else {
                     DebugLog(message: "c不等于1")
                 }
@@ -87,12 +82,14 @@ extension QLHTTPTools {
                 }
             }
         }
+        
     }
     
     
     private func handleCode(code: Int?) {
         DebugLog(message: "code is \(code ?? 0), not 1")
     }
+    
 }
 
 

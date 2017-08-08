@@ -1,4 +1,12 @@
 {
-    "name": "孟庆岭",
-    "message": "您好呀美女!"
+    "c": 1,
+    "d" : {
+               "android_last_version" : "",
+               "ios_force_update" : 0,
+               "ios_last_version" : "2.0"
+               "android_force_update" : 0,
+               "ios_update_info" : "发现新版本,更新看看?\r\n“A+课堂”更名为“AA拼学”，品牌升级，服务体验更上一层楼！",
+               "down_file_md5" : "",
+               "android_update_info" : ""
+           }
 }

@@ -54,11 +54,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         QLHTTPTools.shareInstance.jja_request(target: .ConfigInfo, successHandle: { (response) in
-            DebugLog(message: response)
-            guard let model = JJAConfigModel.deserialize(from: (response as! NSDictionary), designatedPath: "d") else { return }
-            DebugLog(message: model.android_last_version)
-        }) { (error) in
+//            DebugLog(message: response)
+//            guard let model: JJAConfigModel =  JJAConfigModel.jja_prase(jsonData: response) else { return }
+//            DebugLog(message: model.ios_last_version)
             
+            guard let modelArray:[JJAConfigModel] = JJAConfigModel.jja_praseArray(jsonData: response) else {return}
+            NSLog("%d", modelArray.count)
+            for model: JJAConfigModel in modelArray {
+                DebugLog(message: model)
+                DebugLog(message: model.ios_version!)
+            }
+            
+        }) { (error) in
+            DebugLog(message: error);
         }
         return true
     }

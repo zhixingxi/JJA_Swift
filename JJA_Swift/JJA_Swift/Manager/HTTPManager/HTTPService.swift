@@ -59,7 +59,19 @@ extension HTTPService: TargetType {
     }
     
     var sampleData: Data {
-        return "".data(using: .utf8)!
+        switch self {
+        case .ConfigInfo:
+            let path = Bundle.main.path(forResource: "meng.json", ofType: nil)
+            let data = NSData(contentsOfFile: path!)
+            let str = String(data: data! as Data, encoding: .utf8)
+            DebugLog(message: str)
+            let data1 = str!.data(using: .utf8)!
+            return data1
+        default:
+            return Data()
+        }
+        
+        
     }
     
     var task: Task {
