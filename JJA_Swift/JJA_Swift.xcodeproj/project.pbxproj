@@ -28,6 +28,7 @@
 		E49D76211F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76201F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift */; };
 		E49D76231F3A15C600846985 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76221F3A15C600846985 /* BaseViewController.swift */; };
 		E49D76251F3A17FB00846985 /* JJALoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76241F3A17FB00846985 /* JJALoginController.swift */; };
+		E49D76271F3AAC9600846985 /* String+QLFilepath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D76261F3AAC9600846985 /* String+QLFilepath.swift */; };
 		E4CD7C951EE2C78800077BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CD7C941EE2C78800077BDD /* AppDelegate.swift */; };
 		E4D654D51EE847A40087874E /* AppDelegate+QLCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */; };
 		E4D654D81EE84BFE0087874E /* AppCommonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */; };
@@ -83,6 +84,7 @@
 		E49D76201F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+QLExtension.swift"; sourceTree = "<group>"; };
 		E49D76221F3A15C600846985 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E49D76241F3A17FB00846985 /* JJALoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJALoginController.swift; sourceTree = "<group>"; };
+		E49D76261F3AAC9600846985 /* String+QLFilepath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+QLFilepath.swift"; sourceTree = "<group>"; };
 		E4CD7C941EE2C78800077BDD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D654D41EE847A40087874E /* AppDelegate+QLCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+QLCommon.swift"; sourceTree = "<group>"; };
 		E4D654D71EE84BFE0087874E /* AppCommonInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommonInfo.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				E49D761E1F3A0E2900846985 /* UIScreen+QLExtension.swift */,
+				E49D76261F3AAC9600846985 /* String+QLFilepath.swift */,
 				E49D76201F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift */,
 			);
 			path = Extensions;
@@ -571,6 +574,7 @@
 				E49D76121F3A06C800846985 /* JJAConfigModel.swift in Sources */,
 				E45D34CF1EEF96B60083C93D /* ProfileViewController.swift in Sources */,
 				E45D34CD1EEF96630083C93D /* ManagerViewController.swift in Sources */,
+				E49D76271F3AAC9600846985 /* String+QLFilepath.swift in Sources */,
 				E49D76211F3A13CD00846985 /* UIBarButtonItem+QLExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

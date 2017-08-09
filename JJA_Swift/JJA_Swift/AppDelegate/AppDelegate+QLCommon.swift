@@ -28,9 +28,10 @@ extension AppDelegate {
     //加载app配置信息
     func loadAppConfigerInformation() {
         QLHTTPTools.shareInstance.jja_request(target: .ConfigInfo, successHandle: { (responsObj) in
-            QLHTTPTools.shareInstance.configModel = JJAConfigModel.jja_prase(jsonData: responsObj)
+            let configModel: JJAConfigModel? = JJAConfigModel.jja_prase(jsonData: responsObj)
+            configModel?.saveConfigModel()
         }) { (error) in
-            
+            DebugLog(message: "配置信息加载失败")
         }
         
     }

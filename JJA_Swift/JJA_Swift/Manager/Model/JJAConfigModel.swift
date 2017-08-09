@@ -7,7 +7,9 @@
 //
 
 import Foundation
-import HandyJSON
+import SwiftyJSON
+
+private let jjaConfigFile: String = "configModel.json"
 
 struct JJAConfigModel: JsonModelProtocal {
     
@@ -20,6 +22,31 @@ struct JJAConfigModel: JsonModelProtocal {
     var ios_update_info: String?
     var down_url: String?
     var android_update_info: String?
+    
+    init() {
+        guard let path = jjaConfigFile.ql_appendDocumentDir(),
+            let data = NSData(contentsOfFile: path) else {
+                return
+        }
+        let jsonDict = JSON(data: data as Data)
+        self.ios_force_update = jsonDict["ios_force_update"].intValue
+        self.live_stat = jsonDict["live_stat"].intValue
+        self.ios_last_version = jsonDict["ios_last_version"].stringValue
+        self.ios_update_info = jsonDict["ios_update_info"].stringValue
+        self.down_url = jsonDict["down_url"].stringValue
+    }
+    
+    
+    func saveConfigModel() {
+        let dict = self.toJSON() as [String: AnyObject]? ?? [:]
+        guard let data = try? JSONSerialization.data(withJSONObject: dict, options: []),
+            let fileName = jjaConfigFile.ql_appendDocumentDir() else {
+                return
+            }
+        // 写入磁盘
+        (data as NSData).write(toFile: fileName, atomically: true)
+        
+    }
     
 //    //自定义属性转换
 //    mutating func mapping(mapper: HelpingMapper) {
