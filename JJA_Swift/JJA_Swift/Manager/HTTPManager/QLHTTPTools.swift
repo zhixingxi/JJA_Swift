@@ -26,7 +26,7 @@ class QLHTTPTools {
     static let shareInstance: QLHTTPTools = QLHTTPTools()
     
     //App配置信息的model
-    lazy var configModel = JJAConfigModel()
+    lazy var configModel = JJAConfigModel.creatConfigModel()
     
     
     // 请求头

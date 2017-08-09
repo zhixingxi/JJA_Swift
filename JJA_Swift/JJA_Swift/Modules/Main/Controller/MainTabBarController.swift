@@ -32,7 +32,7 @@ class MainTabBarController: UITabBarController {
 // MARK: - 新特性界面处理
 extension MainTabBarController {
     fileprivate func creatNewFeatureView() {
-        if !isNewFeature {
+        if isNewFeature {
             return
         }
         let newFeatureView = JJANewFeatureView()

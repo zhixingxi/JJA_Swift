@@ -23,17 +23,19 @@ struct JJAConfigModel: JsonModelProtocal {
     var down_url: String?
     var android_update_info: String?
     
-    init() {
+    static func creatConfigModel() -> JJAConfigModel? {
         guard let path = jjaConfigFile.ql_appendDocumentDir(),
             let data = NSData(contentsOfFile: path) else {
-                return
+                return nil
         }
         let jsonDict = JSON(data: data as Data)
-        self.ios_force_update = jsonDict["ios_force_update"].intValue
-        self.live_stat = jsonDict["live_stat"].intValue
-        self.ios_last_version = jsonDict["ios_last_version"].stringValue
-        self.ios_update_info = jsonDict["ios_update_info"].stringValue
-        self.down_url = jsonDict["down_url"].stringValue
+        var model = JJAConfigModel()
+        model.ios_force_update = jsonDict["ios_force_update"].intValue
+        model.live_stat = jsonDict["live_stat"].intValue
+        model.ios_last_version = jsonDict["ios_last_version"].stringValue
+        model.ios_update_info = jsonDict["ios_update_info"].stringValue
+        model.down_url = jsonDict["down_url"].stringValue
+        return model
     }
     
     

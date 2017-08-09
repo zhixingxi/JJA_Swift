@@ -27,7 +27,7 @@ class JJANewFeatureView: UIView {
     fileprivate lazy var enterBtn: UIButton = {
         let btn = UIButton(type: UIButtonType.custom)
         btn.backgroundColor = UIColor.clear
-        btn.frame = CGRect(x: 0, y: SCREEN_HEIGHT - 70, width: SCREEN_WIDTH, height: 70)
+        btn.frame = CGRect(x: 0, y: SCREEN_HEIGHT - ql_autoHeight(70), width: SCREEN_WIDTH, height: ql_autoHeight(70))
         btn.addTarget(self, action: #selector(enterHome), for: .touchUpInside)
         btn.isHidden = true
         return btn

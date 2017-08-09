@@ -20,18 +20,6 @@ func DebugLog<T>(message: T,
 }
 
 
-/// 屏幕宽度
-var myScreenWith: Double {
-    return Double(UIScreen.main.bounds.size.width)
-}
-/// 屏幕高度
-var myScreenHeight: Double {
-    return Double(UIScreen.main.bounds.size.height)
-}
-//屏幕缩放比例
-var myScreenScale: Double {
-    return Double(UIScreen.main.scale)
-}
 
 
 

@@ -18,6 +18,6 @@ extension String {
         
         let dir: NSString = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as NSString;
         
-        return dir.appending(self.lastPathComponent)
+        return dir.appendingPathComponent(self)
     }
 }
