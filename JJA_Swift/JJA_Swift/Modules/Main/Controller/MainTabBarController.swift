@@ -9,12 +9,19 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupChildControllers()
+        // 判断登录状态
         
+        // 新特性页面
+        creatNewFeatureView()
     }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -22,7 +29,38 @@ class MainTabBarController: UITabBarController {
     }
 }
 
-//MARK: - 界面相关
+// MARK: - 新特性界面处理
+extension MainTabBarController {
+    fileprivate func creatNewFeatureView() {
+        if !isNewFeature {
+            return
+        }
+        let newFeatureView = JJANewFeatureView()
+        view.addSubview(newFeatureView)
+    }
+    
+    private var isNewFeature: Bool {
+        
+        //1.取当前版本号1.0.0
+        
+        let currentVersion = AppCommonInfo.appVersion
+        
+        DebugLog(message: currentVersion)
+        //2.取保存在Document(iTunes备份)(最理想是保存在用户偏好中)目录中的之前的版本号
+        let lastViersion = UserDefaults.standard.value(forKey: "AppVersion") as? String ?? ""
+        
+        DebugLog(message: lastViersion)
+        
+        
+        //3.将当前版本号保存在沙盒
+        UserDefaults.standard.setValue(currentVersion, forKey: "AppVersion")
+        //4. 返回版本号是否一致
+        
+        return currentVersion != lastViersion
+    }
+}
+
+//MARK: - 主界面相关
 extension MainTabBarController {
     fileprivate func setupChildControllers() {
         let docDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]

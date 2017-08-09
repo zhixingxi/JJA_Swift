@@ -15,6 +15,7 @@ class NavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage();
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
