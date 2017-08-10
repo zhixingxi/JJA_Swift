@@ -54,8 +54,6 @@ class JJANewFeatureView: UIView {
 //MARK: - 界面
 extension JJANewFeatureView {
     func setupUI() {
-        addSubview(scrollView)
-        addSubview(enterBtn)
         let count = imageArray.count
         let rect = UIScreen.main.bounds
         for i in 0 ..< count {

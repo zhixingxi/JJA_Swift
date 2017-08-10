@@ -27,6 +27,4 @@ extension JsonModelProtocal {
         let str = jsonData.rawString()
         return [T].deserialize(from: str) as? [T]
     }
-    
-    
 }
