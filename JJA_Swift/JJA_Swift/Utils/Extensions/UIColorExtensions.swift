@@ -7,6 +7,51 @@
 //
 
 import UIKit
+/*
+ #define SDTextColor [UIColor colorWithHexString:@"#cc3333"]//红
+ #define SDTextColor2 [UIColor colorWithHexString:@"#e08585"]//红
+ #define SDTextColor3 [UIColor colorWithHexString:@"#ffffff"]//白
+ #define SDTitleColor [UIColor colorWithHexString:@"#3a62fa"]//标题色
+ #define TableBckColor SDRGBColor(242, 244, 245, 1)
+ 
+ #define SDBlack_OneColor [UIColor colorWithHexString:@"#000000"]
+ 
+ #define SDBlack_TwoColor [UIColor colorWithHexString:@"#333333"]
+ #define SDBlack_ThirdColor [UIColor colorWithHexString:@"#666666"]
+ #define SDBlack_FourthColor [UIColor colorWithHexString:@"#999999"]
+ #define SDBlack_FifthColor [UIColor colorWithHexString:@"#cccccc"]
+ #define SDBlack_SixColor  [UIColor colorWithHexString:@"#e1e1e1"]
+ */
+
+
+//MARK: - 颜色属性, 相当于宏定义
+var colorCC3333: UIColor? {// 红
+    return UIColor(hexString: "#cc3333")
+}
+var colorE08585: UIColor? {// 红
+    return UIColor(hexString: "#e08585")
+}
+var colorFfffff: UIColor? {
+    return UIColor(hexString: "#ffffff")
+}
+var color3a62fa: UIColor? {
+    return UIColor(hexString: "#3a62fa")
+}
+var color000000: UIColor? {
+    return UIColor(hexString: "000000")
+}
+var color333333: UIColor? {
+    return UIColor(hexString: "333333")
+}
+var color666666: UIColor? {
+    return UIColor(hexString: "666666")
+}
+var color999999: UIColor? {
+    return UIColor(hexString: "999999")
+}
+var colorCccccc: UIColor? {
+    return UIColor(hexString: "cccccc")
+}
 
 // MARK: - 颜色创建
 extension UIColor {

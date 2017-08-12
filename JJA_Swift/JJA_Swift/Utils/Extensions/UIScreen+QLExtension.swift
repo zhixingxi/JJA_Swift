@@ -7,6 +7,33 @@
 //  根据屏幕进行尺寸和字体大小的适配
 
 import UIKit
+// MARK: - 字体大小计算属性, 相当于宏定义
+var kFont10: UIFont {
+    return ql_autoFont(10)
+}
+var kFont11: UIFont {
+    return ql_autoFont(11)
+}
+var kFont12: UIFont {
+    return ql_autoFont(12)
+}
+var kFont13: UIFont {
+    return ql_autoFont(13)
+}
+var kFont14: UIFont {
+    return ql_autoFont(14)
+}
+var kFont15: UIFont {
+    return ql_autoFont(15)
+}
+var kFont16: UIFont {
+    return ql_autoFont(16)
+}
+var kFont17: UIFont {
+    return ql_autoFont(17)
+}
+
+
 
 /// 屏幕宽度
 var myScreenWith: Double {
@@ -26,6 +53,7 @@ private let screen: UIScreen = UIScreen.main
 func ql_autoWidth(_ width: Double) -> Double {
     return screen.size_iphoneMini ? screen.width_to_mini(width) : screen.size_iphonePlus ? screen.width_to_plus(width) : width
 }
+
 func ql_autoHeight(_ height: Double) -> Double {
     return screen.size_iphoneMini ? screen.height_to_mini(height) : screen.size_iphonePlus ? screen.height_to_plus(height) : height
 }
