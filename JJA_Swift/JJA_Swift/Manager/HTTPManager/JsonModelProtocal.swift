@@ -11,7 +11,6 @@ import Foundation
 import HandyJSON
 import SwiftyJSON
 protocol JsonModelProtocal: HandyJSON {
-    
     static func jja_prase(jsonData: JSON) -> Self?
 }
 
